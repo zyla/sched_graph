@@ -7,6 +7,12 @@ Restrictions:
 
 - Uses x86-specific instructions
 
+## How it works
+
+The program reads the TSC (Time Stamp Counter) register in a loop. When the
+difference between two consecutive readings becomes high enough, this is
+interpreted as preemption.
+
 ## Usage on Linux
 
 Go to `timer` directory, run `build.sh`.
